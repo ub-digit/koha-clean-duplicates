@@ -1,0 +1,2 @@
+#!/bin/bash
+mkdir non_matching && mkdir not_found && mkdir partially_matching

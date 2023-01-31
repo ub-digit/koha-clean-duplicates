@@ -1,0 +1,1 @@
+SELECT e1.biblionumber, e1.value, COUNT(*) c FROM ub_biblio_extra e1 JOIN ub_biblio_extra e2 ON e1.label = 'system-control' AND e2.label = 'system-control' AND e1.value = e2.value WHERE e1.biblionumber <> e2.biblionumber GROUP BY e1.biblionumber, e1.value ORDER BY e1.value;
